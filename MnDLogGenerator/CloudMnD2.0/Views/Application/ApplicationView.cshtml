@@ -1,0 +1,22 @@
+﻿@model CloudMnD2._0.Models.ApplicationModel
+
+@{
+    ViewData["Title"] = "Emulate application";
+}
+
+<h1>Emulate application</h1>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoleName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoleName)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
