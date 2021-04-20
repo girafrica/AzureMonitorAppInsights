@@ -2,7 +2,6 @@
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
 using System;
-using System.Configuration;
 
 namespace CloudMnD2._0.Core.ApplicationInsights
 {
@@ -15,7 +14,7 @@ namespace CloudMnD2._0.Core.ApplicationInsights
 
         private AppInsightsLogs(string roleName)
         {
-            TelemetryClient = Common.GetTelemetryClient(roleName, ConfigurationManager.AppSettings["APPINSIGHTS_INSTRUMENTATIONKEY"]);
+            TelemetryClient = Common.GetTelemetryClient(roleName, System.Configuration.ConfigurationManager.AppSettings["APPINSIGHTS_INSTRUMENTATIONKEY"]);
         }
 
         public static void Initialize(string roleName)
