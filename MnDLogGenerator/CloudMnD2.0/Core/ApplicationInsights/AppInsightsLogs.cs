@@ -14,7 +14,7 @@ namespace CloudMnD2._0.Core.ApplicationInsights
 
         private AppInsightsLogs(string roleName)
         {
-            TelemetryClient = Common.GetTelemetryClient(roleName, "!!!Enter instrumentationKey!!!");
+            TelemetryClient = Common.GetTelemetryClient(roleName, ConfigurationManager.AppSettings["APPINSIGHTS_INSTRUMENTATIONKEY"]);
         }
 
         public static void Initialize(string roleName)
@@ -42,7 +42,7 @@ namespace CloudMnD2._0.Core.ApplicationInsights
             }
             TelemetryClient.TrackRequest(requestTelemetry);
         }
-        
+
         public void GenerateException(string operationId = "")
         {
             var exceptionTelemetry = new ExceptionTelemetry
