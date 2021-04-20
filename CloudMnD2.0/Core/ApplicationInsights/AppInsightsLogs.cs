@@ -2,6 +2,7 @@
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
 using System;
+using System.Configuration;
 
 namespace CloudMnD2._0.Core.ApplicationInsights
 {
