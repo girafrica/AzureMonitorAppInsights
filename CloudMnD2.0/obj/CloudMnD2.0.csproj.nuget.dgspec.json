@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Azure_test\\MonitoringAzure\\MonitoringAzure\\MnDLogGenerator\\CloudMnD2.0\\CloudMnD2.0.csproj": {}
+    "C:\\Users\\User\\Desktop\\AzureMonitorAppInsights\\CloudMnD2.0\\CloudMnD2.0.csproj": {}
   },
   "projects": {
-    "C:\\Azure_test\\MonitoringAzure\\MonitoringAzure\\MnDLogGenerator\\CloudMnD2.0\\CloudMnD2.0.csproj": {
+    "C:\\Users\\User\\Desktop\\AzureMonitorAppInsights\\CloudMnD2.0\\CloudMnD2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Azure_test\\MonitoringAzure\\MonitoringAzure\\MnDLogGenerator\\CloudMnD2.0\\CloudMnD2.0.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\AzureMonitorAppInsights\\CloudMnD2.0\\CloudMnD2.0.csproj",
         "projectName": "CloudMnD2.0",
-        "projectPath": "C:\\Azure_test\\MonitoringAzure\\MonitoringAzure\\MnDLogGenerator\\CloudMnD2.0\\CloudMnD2.0.csproj",
-        "packagesPath": "C:\\Users\\Siarhei_Malyshau\\.nuget\\packages\\",
-        "outputPath": "C:\\Azure_test\\MonitoringAzure\\MonitoringAzure\\MnDLogGenerator\\CloudMnD2.0\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\AzureMonitorAppInsights\\CloudMnD2.0\\CloudMnD2.0.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\AzureMonitorAppInsights\\CloudMnD2.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Siarhei_Malyshau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,10 +22,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AlexanderDavydov/_packaging/PartsUnlimitedShared/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +39,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.ApplicationInsights": {
               "target": "Package",
@@ -45,6 +48,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -65,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
